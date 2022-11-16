@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Blue Sky</title>
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<link rel="stylesheet" href="./weather.css">
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+  <title>Blue Sky</title>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- <script type="text/javascript" src="index.js"></script> -->
+  <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+</head>
+
+<body>
+  <section class="first-section" id="title">
+    <div class="container-fluid">
+      <!-- Nav Bar -->
+      <nav class="navbar navbar-expand-lg navbar-dark">
+
+        <a class="navbar-brand" href="">Blue Sky</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <h1 class="title">Blue Sky Weather</h1>
+      <div class="row">
+        <div class="col-sm-6">
+      <div class="input-group mb-3">
+  <input type="text" class="searchInput form-control" placeholder="Search for City or Place..." aria-label="Search for City or Place..." aria-describedby="button-addon2">
+  <button class="searchBtn btn btn-outline-secondary" type="button" id="button-addon2"><i class="fas fa-search"></i></button>
+</div>
+</div>
+</div>
+  </section>
+  <section class="forecast">
+    <div class="historyItems"></div>
+    <div class="row">
+    <div class="forecast">
+    <div class="col-sm-6">
+    <div class="card text-center">
+  <div class="card-header">
+    <h1 class="cityName">City Name</h1>
+    <h1 class="currentDate"></h1>
+  </div>
+  <div class="forecast card-body">
+    <img class="weatherIcon"></img>
+    <p class="temp card-text">Temperature:</p>
+    <p class="humidity card-text">Humidity:</p>
+    <p class="windSpeed card-text">Wind Speed:</p>
+<p class="uvIndex card-text">UV Index:</p>
+  </div>
+  </div>
+  </div>
+  <!-- <div class="card-footer text-muted">
+    2 days ago
+  </div> -->
+</div>
+    <!-- <div class="historyItems"></div>
+<div class="col-two-container">
+<div class="forecast">
+  <div class="row">
+      <h1 class="cityName">City Name</h1>
+      <h1 class="currentDate"></h1>
+      <img class="weatherIcon"></img>
+  </div>
+  <div class="row">
+      <p class="temp">Temperature:</p>
+  </div>
+  <div class="row">
+      <p class="humidity">Humidity:</p>
+  </div>
+  <div class="row">
+      <p class="windSpeed">Wind Speed:</p>
+  </div>
+  <div class="row">
+      <p class="uvIndex">UV Index:</p>
+  </div>
+</div> -->
+<div class="row">
+  <!-- <div class="col-md-12"> -->
+<div class="card text-center">
+  <div class="card-header">
+    <h1>5-Day Forecast:</h1>
+  </div>
+  <div class="container">
+    <!-- <div class="card-row">
+      <div class="col-sm"> -->
+       <div class="card-row row row-cols-1 row-cols-sm-2 row-cols-md-4""
+  <div class="five-day-container card-body">
+
+    </div>
+</div>
+</div>
+</div>
+  </section>
+  <section class="footer">
+
+  </section>
+  <script type="text/javascript" src="weather.js"></script>
+</body>
+
+</html>
